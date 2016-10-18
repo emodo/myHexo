@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://blog.smackdown.gebilaowu.cn
+url: http://www.dushichen.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-smackdown
+theme: clean
 
 # hexo sitemap网站地图
 sitemap:
@@ -72,18 +72,14 @@ baidusitemap:
   path: baidusitemap.xml
 
 # add post views
-leancloud_visitors:
-  enable: true
-  app_id: K1qAIJa0JgKeGUnrlq0G526F-gzGzoHsz
-  app_key: n4XwRe0iBOxWpBaYJ7HNWPA3
+# leancloud_visitors:
+#   enable: true
+#   app_id: K1qAIJa0JgKeGUnrlq0G526F-gzGzoHsz
+#   app_key: n4XwRe0iBOxWpBaYJ7HNWPA3
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
 - type: git
-  repo: https://github.com/winnerweb/blog.git
-  branch: gh-pages
-- type: git
-  repo: https://git.coding.net/winnerweb/blog.git
-  branch: gh-pages
-
+  repo: git@github.com:emodo/emodo.github.io.git
+  branch: master
