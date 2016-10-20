@@ -3,14 +3,14 @@ menu:
   Home: /
   Archives: /archives
   Github:
-    url: https://github.com/klugjo/hexo-theme-clean-blog
+    url: https://github.com/emodo
     icon: github
 
 # Title on top left of menu. Leave empty to use main blog title
-menu_title: Configurable Title
+menu_title: Menu
 
 # URL of the Home page image
-index_cover: http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg
+index_cover: http://7xnjo6.com1.z0.glb.clouddn.com/20151015-IMG_1069-3.jpg
 
 # Default post title
 default_post_title: Untitled
@@ -32,10 +32,10 @@ google_analytics:
 addthis:
 
 # Social Accounts
-twitter_url:
+twitter_url: https://twitter.com/dushichen
 twitter_handle:
 facebook_url:
-github_url: https://github.com/klugjo/hexo-theme-clean-blog
+github_url: https://github.com/emodo
 gitlab_url:
 linkedin_url:
 mailto:
