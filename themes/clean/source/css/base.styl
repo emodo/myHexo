@@ -102,13 +102,48 @@ hr.small
       -ms-transform translate3d(0, 100%, 0)
       -o-transform translate3d(0, 100%, 0)
       transform translate3d(0, 100%, 0)
+.navbar-default .navbar-brand
+  color: #777;
+.teaserimage
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+.site-heading
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  h1
+    margin-top: 80px;
+
+hr.small
+  border-color: #e0e0e0;
+
+.post-title {
+  margin-top: 100px;
+}
+
+.blog-logo
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: -60px;
+  right: 50%;
+  margin-right: -60px;
+  background-size: cover;
+  border-radius: 50%;
+  z-index: 99;
+  text-indent: -9999px;
+  border: 3px solid white;
+  background-color: white;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+
 
 .intro-header
   background-color gray
   background-position center center
   background-attachment scroll
   @extend .background-cover
-  margin-bottom 50px
   .site-heading, .post-heading, .page-heading
     padding 100px 0 50px
     color white
@@ -118,7 +153,7 @@ hr.small
       color brand-primary
       margin-top 60px
   .site-heading, .page-heading
-    text-align center
+    text-align center;
     h1
       margin-top 0
       font-size 50px
