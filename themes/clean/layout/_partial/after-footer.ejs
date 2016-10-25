@@ -1,14 +1,16 @@
 
 <!-- jQuery -->
 <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
-
+<%- js('js/highlight.pack.js') %>
+<script>hljs.initHighlightingOnLoad();</script>
 <!-- Bootstrap -->
 <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <!-- Gallery -->
 <script src="//cdn.bootcss.com/featherlight/1.5.0/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
-
+<%- partial("_partial/google-analytics.ejs") %>
 <!-- Disqus Comments -->
+
 <% if (theme.comments && theme.comments.disqus_shortname){ %>
 <script type="text/javascript">
     var disqus_shortname = '<%= theme.comments.disqus_shortname %>';
