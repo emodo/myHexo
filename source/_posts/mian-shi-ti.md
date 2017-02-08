@@ -116,19 +116,50 @@ js的对象是通过引用来传递的，我们创建的新对象，没有属于
 堆： 引用数据类型 (Object Array Fucntion)
 
 ### Javascript如何实现继承？
-
+1. 构造继承
+2. 原型继承
+3. 实例继承
+4. 拷贝继承
 
 ### Javascript创建对象的几种方式？
+1. 对象字面量
 
+  ```javascript
+  var a = {
+    aaa: 1,
+    bbb: 2,
+  };
+  ```
+2. function模拟无参的构造函数
+
+  ```javascript
+    function A(){};
+    var a = new A;
+    a.b = "111";
+  ```
+3. function的this
+
+  ```javascript
+    function A(){
+      this.a = '';
+    };
+    var a = new A();
+    a.b = '1111';
+  ```
 ### Javascript作用链域?
-
+全局函数无法查看局部函数的内部细节，局部函数可以向上查找
 ### 谈谈This对象的理解。
-
+this指向总是指向函数的直接调用者，如果new了一下那就是new出来的那个对象
 ### eval是做什么的？
-
+eval解析字符串为js语句并执行
 ### 什么是window对象? 什么是document对象?
-
+window对象是指浏览器打开的窗口
+document对象是指HTML 文档对象的一个只读引用，她是window对象的一个属性
 ### null，undefined的区别？
+null表示一个对象是没有值得值
+undefined是一个变量声明了但是没有初始化（赋值）
+null的类型是object
+undefined就是undifined
 
 ### 写一个通用的事件侦听器函数(机试题)。
 
@@ -137,12 +168,19 @@ js的对象是通过引用来传递的，我们创建的新对象，没有属于
 ### 关于事件，IE与火狐的事件机制有什么区别？ 如何阻止冒泡？
 
 ### 什么是闭包（closure），为什么要用它？
+访问局部函数中的变量，突破作用域链
 
 ### javascript 代码中的"use strict";是什么意思 ? 使用它区别是什么？
 
+es5的严格模式
+
 ### 如何判断一个对象是否属于某个类？
+instanceof
 
 ### new操作符具体干了什么呢
+1. 创建一个空对象，this引用该对象，继承该函数的原型
+2. 属性和方法加入this引用的对象中
+3. 新创建的对象由this所引用
 
 ### 用原生JavaScript的实现过什么功能吗？
 
@@ -153,13 +191,14 @@ js的对象是通过引用来传递的，我们创建的新对象，没有属于
 ### [].forEach.call($$("*"),function(a){ a.style.outline="1px solid #"+(~~(Math.random()*(1<<24))).toString(16) }) 能解释一下这段代码的意思吗？
 
 ### js延迟加载的方式有哪些？
-
+defer asnyc
 ### Ajax 是什么? 如何创建一个Ajax？
+局部刷新
 
 ### 同步和异步的区别?
 
 ### 如何解决跨域问题?
-
+jsonp
 ### 页面编码和被请求的资源编码如果不一致如何处理？
 
 ### 模块化开发怎么做？
